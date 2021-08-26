@@ -1,16 +1,16 @@
 import t from "translator";
-import {ColoredContainer} from "cmn-components/ColoredContainer";
 
-import {Section} from "./components";
 import {AboutMe} from "./AboutMe";
-import {Services} from "./Services";
+import {Services} from "./services";
+import {Contact} from "./contact";
 
 export function HomePage() {
     return <>
-        <Section className={'d-flex align-items-center justify-content-center'}>
-            <ColoredContainer><h1>{t('en', 'about.title')}</h1></ColoredContainer>
-        </Section>
+        <div id={'home'} className={'d-flex align-items-center justify-content-center pt-5'}>
+            <h1 className={'text-center'}>{t('en', 'about.title')}</h1>
+        </div>
         <AboutMe/>
         <Services/>
+        <Contact/>
     </>
 }

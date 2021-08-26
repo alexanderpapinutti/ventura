@@ -1,25 +1,9 @@
 body {
     font-family: "Dank Mono", ui-monospace, monospace !important;
-    background: hsl(302, 100%, 10%) !important;
 }
 
-.colored-container {
-    background: radial-gradient(
-            hsl(100, 100%, 60%),
-            hsl(200, 100%, 60%)
-    ) fixed;
-    background: conic-gradient(
-            hsl(100, 100%, 60%),
-            hsl(200, 100%, 60%),
-            hsl(100, 100%, 60%)
-    ) fixed;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-align: center;
-}
-
-.section-height {
-    padding-top: 200px;
+.section-padding {
+    padding-top: 100px;
 }
 
 p {
@@ -32,16 +16,4 @@ h1 {
 
 h2 {
     font-size: 60px !important;
-}
-
-h3 {
-    font-size: 60px;
-}
-
-h4 {
-    font-size: 35px;
-}
-
-h5 {
-    font-size: 20px;
 }

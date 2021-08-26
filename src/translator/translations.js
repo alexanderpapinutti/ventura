@@ -1,9 +1,11 @@
 import {about} from "./about";
 import {skills} from "./skills";
+import {contact} from "./contact";
 
 const translations = {
     about,
-    skills
+    skills,
+    contact
 }
 
 export default translations;

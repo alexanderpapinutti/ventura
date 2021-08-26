@@ -15,11 +15,11 @@ export function ServiceCard({title, text}) {
     }
 
     return (
-            <Card className={'card m-2'}>
+            <Card className={'shadow-lg p-3 mb-5 bg-white rounded'}>
                 <Card.Body>
                     <Card.Title className={'title-section'}><h4>{title}</h4></Card.Title>
                     <Card.Text className={textStyle}>{text}</Card.Text>
-                    <Button variant="primary" onClick={setReadMore.bind(this, !readMore)}>{buttonText}</Button>
+                    <Button variant="dark" onClick={setReadMore.bind(this, !readMore)}>{buttonText}</Button>
                 </Card.Body>
             </Card>
     )

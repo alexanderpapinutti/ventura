@@ -3,7 +3,6 @@ import t from 'translator';
 import {ServiceCard} from "./ServiceCard";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import {ColoredContainer} from "../../../cmn-components/ColoredContainer";
 
 function getServiceList(lang) {
     return [
@@ -19,20 +18,20 @@ export function Services() {
     const serviceList = getServiceList('en');
 
     return (
-            <Row className={'justify-content-center p-5'}>
-                <ColoredContainer>
-                    <h2>What I can do for you...</h2>
-                </ColoredContainer>
-                {_.map(serviceList, service =>
-                    <Col xs={12} md={6} lg={4}>
-                        <ServiceCard
-                            key={service.title}
-                            title={service.title}
-                            text={service.text}
-                        />
-                    </Col>
-                )}
+        <div id={'service-list'} className={'justify-content-center p-5'}>
+                <h2 className={'pb-5'}>What I can do for you...</h2>
+            <Row>
+            {_.map(serviceList, service =>
+                <Col xs={12} md={6} lg={4}>
+                    <ServiceCard
+                        key={service.title}
+                        title={service.title}
+                        text={service.text}
+                    />
+                </Col>
+            )}
             </Row>
+        </div>
     )
 }
 

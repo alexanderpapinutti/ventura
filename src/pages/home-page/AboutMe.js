@@ -2,7 +2,6 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 import t from "translator";
-import {ColoredContainer} from "cmn-components/ColoredContainer";
 
 import {NumberDisplay, Section} from "./components";
 import dayjs from "dayjs";
@@ -29,22 +28,16 @@ function YearsOfWork() {
 
 export function AboutMe() {
     return (
-        <Section>
+        <Section id={'about-me'}>
             <Row>
                 <Col xs={12} md={6} className={'pb-sm-2'}>
-                    <ColoredContainer>
-                        <h2>{t('en', 'about.aboutMe')}</h2>
-                    </ColoredContainer>
+                    <h2>{t('en', 'about.aboutMe')}</h2>
                 </Col>
                 <Col xs={12} md={6}>
-                    <ColoredContainer>
-                        <p>{t('en', 'about.description')}</p>
-                    </ColoredContainer>
+                    <p>{t('en', 'about.description')}</p>
                 </Col>
                 <Col xs={12}>
-                    <ColoredContainer>
-                        <YearsOfWork/>
-                    </ColoredContainer>
+                    <YearsOfWork/>
                 </Col>
             </Row>
         </Section>
