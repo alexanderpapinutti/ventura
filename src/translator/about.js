@@ -10,10 +10,11 @@ export const about = {
     },
     description: {
         en: 'Let me tell you more about myself. I am a Full Stack Javascript developer and I ' +
-            'started my journey as a professional web developer in 2019. The work was demanding ' +
-            'and pushed me to learn new technologies at a fast pace, allowing me to develop a ' +
-            'variety of skills to which may be of service to you!',
-        it: ''
+            'started my journey as a professional web developer in 2019. Since then, I worked in a company that' + 
+            'offered Software as a Service (SaaS) where I had the opportunity to nourish valuable skills, which I am now using to offer my own services',
+        it: 'Lascia che mi presenti. Sono uno sviluppatore "Full Stack" speciallizato con Javascript ' +
+        "ed ho inizziato il mio tragitto come professionale nel 2019 in una compagnia che offriva Software come servizio (SaaS). Da quando ho iniziato la mia carriera ho havuto l'occasione di " + 
+        "coltivare abilità preziose nel mondo del web e su cui ora conto per offrire un servizzio esemplare e soddisfacente"
     },
     experience: {
         professional: {

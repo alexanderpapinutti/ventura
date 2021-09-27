@@ -1,4 +1,3 @@
-import {ContactForm} from "cmn-components";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
@@ -11,7 +10,6 @@ export function Contact() {
             <p className={'pt-2'}>{t('en', 'contact.details.description')}</p>
         </Col>
         <Col className={'pt-sm-0 pt-md-5 pl-md-5'} sm={12} md={6}>
-            <ContactForm/>
         </Col>
     </Row>
 }
