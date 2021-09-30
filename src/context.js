@@ -1,8 +1,11 @@
 import { createContext } from "react";
 
-const langContext = createContext({
+export const LangContext = createContext({
   language: 'en',
   setLanguage: () => {}
 });
 
-export default langContext;
+export const AlertContext = createContext({
+  alert: false,
+  setAlert: () => {}
+});

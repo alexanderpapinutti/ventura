@@ -70,12 +70,20 @@ export const skills = {
       it: 'Manutenzione'
     },
     text: {
-      en: "Sometimes websites just stop working due to unforseen problems with the code base. Whether it is bug fixing, or even a complete rehaul of the solution you use, I can help you find the most convenient solution that fits your needs",
+      en: "Sometimes websites just stop working due to unforseen complications with the code base. Whether it is bug fixing, or even a complete rehaul of the solution you use, I can help you find the most convenient solution that fits your needs",
       it: 'Avvolte i siti smettono di funzionare a cause di un "bug" or di qualche problema non evidente al momento di implementazzione. Posso offrirvi una soluzione a riguardo.'
     }
   },
-  readMore: {
-    en: 'Read more',
-    it: 'Scopri di più'
+  drawer: {
+    body: {
+      en: '',
+      it: ''
+    }
+  },
+  read: {
+    more: {
+      en: 'Read more',
+      it: 'Scopri di più'
+    }
   }
 }

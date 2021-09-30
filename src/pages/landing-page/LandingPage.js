@@ -1,13 +1,14 @@
 import { useContext } from 'react';
 import t from "translator";
-import langContext from '../../context';
 
-import {AboutMe} from "./AboutMe";
-import { Contact } from './contact';
+import {AboutMe} from "./about-me";
+import {Contact} from './contact';
 import {Services} from "./services";
 
-export function HomePage() {
-  const {lang} = useContext(langContext);
+import {LangContext} from '../../context';
+
+export function LandingPage() {
+  const {lang} = useContext(LangContext);
   
   return <>
       <div id={'home'} className={'d-flex align-items-center justify-content-center pt-5'}>
