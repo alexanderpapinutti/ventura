@@ -4,6 +4,7 @@ import Image from 'react-bootstrap/Image';
 
 import { AlertContext, LangContext } from '../../../context';
 import { copyToClipboard } from '../../../utils';
+
 import gmail from '../../../assets/images/gmail.png';
 import phone from '../../../assets/images/phone.png';
 
@@ -12,7 +13,8 @@ export function Contact() {
   const { setAlert } = useContext(AlertContext);
 
   const emailText = 'alexpapinutti@gmail.com';
-  const phoneText = '+393498117009';
+  const phoneText = '+393498117005';
+
   return (
     <div
       id={'contact'}
