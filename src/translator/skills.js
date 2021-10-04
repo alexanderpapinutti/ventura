@@ -1,89 +1,81 @@
 export const skills = {
   title: {
-    en: "What I can do for you...",
-    it: "Cosa posso offrire..."
+    en: 'What I can do for you...',
+    it: 'Cosa posso offrire...',
   },
   CMS: {
-      title: {
-          en: 'Content Management Systems',
-          it: 'CMS (Sistemi di amministrazione di contenuti)'
-      },
-      text: {
-          en: 'Through close collaboration we can come up with a system that makes ' +
-          'updating content easier and time saving for you',
-          it: 'Tramite collaborazione possiamo trovare il miglior sistema che funzioni per le tue esigenze, nell'
-      }
+    title: {
+      en: 'Content Management Systems',
+      it: 'CMS (Sistemi di amministrazione di contenuti)',
+    },
+    text: {
+      en:
+        'This service aims at finding the most convenient solution for you to manage content in your website. Either by coming up with custom solution, or using one of the ' +
+        'many frameworks available, this service can help you save precious time.',
+      it:
+        'Questo servizio mira a trovare la soluzione più conveniente per te per gestire i contenuti nel tuo sito web. Proponendo una soluzione personalizzata o utilizzando uno dei ' +
+        'molti framework a disposizione, questo servizio può aiutarti a risparmiare tempo prezioso.',
+    },
   },
   dataCollection: {
-      title: {
-          en: 'System data collection & visualization',
-          it: 'Collezionanamento di dati indicatori di performance'
-      },
-      text: {
-          en: 'Data collection and visualization can be an essential tool to make educated strategic decisions about our business. Toghether, we can identify data that can be used to ' + 
-          'make such decisions.',
-          it: 'Collezionare e visuallizare dati vitali della tua impresa può aiutarti a fare decisioni più strategiche, insieme, possiamo identificare quali sono i dati più interessanti e' +
-          ' visualizzarli in vari modi usando |LINK|'
-      }
+    title: {
+      en: 'System data collection & visualization',
+      it: 'Raccolta e visualizzazione dei dati di sistema',
+    },
+    text: {
+      en:
+        'This service aims at collecting business relevant data by integrating a timestamp based database (InfluxDB) and displaying such data in a visually meaningful manner (Grafana).' +
+        ' Being able to see how your system is used can provide you with the competitive edge you need to make educated and strategic decisions about your business',
+      it:
+        'Questo servizio mira a raccogliere dati rilevanti per la vostra impresa, integrando un database basato su timestamp (InfluxDB) e visualizzando tali dati in modo visivamente significativo (Grafana).' +
+        ' Essere in grado di vedere come viene utilizzato il tuo sistema può fornirti il ​​vantaggio competitivo di cui hai bisogno per prendere decisioni consapevoli e strategiche sulla tua attività',
+    },
   },
   database: {
-      title: {
-          en: 'RESTful APIs',
-          it: 'RESTful API'
-      },
-      text: {
-          en: 'If you wish to create an application that will require to store large amounts of data, I can help you by setting up a scalable, reliable & secure solutions',
-          it: 'Se desideri raccogliere dati dai tuoi clienti, posso aiutarvi offrendovi una soluzione appropriata al vostro bisogno, da semplici API a soluzioni scalabili e sicure'
-      }
+    title: {
+      en: 'RESTful API',
+      it: 'RESTful API',
+    },
+    text: {
+      en: 'This service aims at creating a suitable API for your needs. If you need to store data, this service is vital for your web venture!',
+      it: "Questo servizio mira a creare un'API adatta alle tue esigenze. Se hai bisogno di archiviare dati, questo servizio è vitale per la tua impresa web!",
+    },
   },
   webApp: {
-      title: {
-          en: 'Web applications',
-          it: 'Applicazioni sul web'
-      },
-      text: {
-          en: 'If you are planning on starting a business online then you may need an API, a database, authentification & authorization, an administration panel, handle payments, etc... ' +
-              'I can help you find the most efficient solution to your needs.',
-          it: 'Se intendente di amministrare la vostra impresa interamente online, vi servirebbe un API, un database, autentificazzione e autorizzazione, un pannello di amministrazione, processare documenti, etc...' + 
-          'Posso aiutarti a trovare la soluzione più adatta alle vostre esigenze'
-      }
-  },
-  mobileApps: {
-      title: {
-          en: "",
-          it: ""
-      }
-  },
-  websites: {
-      title: {
-          en: 'Responsive Websites',
-          it: 'Siti Web dinamici/statici'
-      },
-      text: {
-          en: "If you need a website that helps your business get exposure then I can surely help. By following guidelines defined by google I can help your create a website that will score high in Search Engines",
-          it: "Se havete bisogno di un sito per esporre la vostra impresa globalmente"
-      }
+    title: {
+      en: 'Web applications / Websites',
+      it: 'Applicazioni sul web / Siti',
+    },
+    text: {
+      en: 'This sevice aims at providing the full solution for you next Web Application or Website, ranging from static websites to blogs to web shops.',
+      it: 'Questo servizio mira a fornire la soluzione completa per la tua prossima applicazione web o sito web, che va dai siti web statici ai blog ai negozi web.',
+    },
   },
   maintenance: {
     title: {
       en: 'Maintenance',
-      it: 'Manutenzione'
+      it: 'Manutenzione',
     },
     text: {
-      en: "Sometimes websites just stop working due to unforseen complications with the code base. Whether it is bug fixing, or even a complete rehaul of the solution you use, I can help you find the most convenient solution that fits your needs",
-      it: 'Avvolte i siti smettono di funzionare a cause di un "bug" or di qualche problema non evidente al momento di implementazzione. Posso offrirvi una soluzione a riguardo.'
-    }
+      en: 'This service aims at fixing and maintaining websites / applications/ mobile applications',
+      it: 'Questo servizio mira a riparare e mantenere siti web / applicazioni / applicazioni mobili',
+    },
   },
   drawer: {
-    body: {
-      en: '',
-      it: ''
-    }
+    title: {
+      en: "Here's a list of technologies I've worked with and an abstraction of my experience/confidence working with such tools:",
+      it: "Ecco un elenco di tecnologie con cui ho lavorato e un'astrazione della mia esperienza/confidenza lavorando con tali strumenti:",
+    },
+  },
+
+  skillList: {
+    en: 'Technologies I use',
+    it: 'Tecnologie utilizate',
   },
   read: {
     more: {
       en: 'Read more',
-      it: 'Scopri di più'
-    }
-  }
-}
+      it: 'Scopri di più',
+    },
+  },
+};

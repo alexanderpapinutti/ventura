@@ -12,13 +12,14 @@ const skillList = [
   { alt: 'Mongoose.js', level: 96 },
   { alt: 'React-native', level: 82 },
   { alt: 'Jest.js', level: 89 },
-  { alt: 'Vue.js', level: 18 },
+  { alt: 'Vue.js', level: 21 },
   { alt: 'Grafana', level: 85 },
   { alt: 'InfluxDB', level: 80 },
   { alt: 'Sanity Studio (CMS)', level: 65 },
-  { alt: 'Ember.js', level: 20 },
-  { alt: 'AWS Services', level: 41 },
-  { alt: 'GitLab', level: 90 },
+  { alt: 'Ember.js', level: 18 },
+  { alt: 'AWS Lambda', level: 41 },
+  { alt: 'GitLab', level: 85 },
+  { alt: 'GitHub', level: 95 },
 ];
 
 export function SkillList() {

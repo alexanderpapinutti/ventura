@@ -28,14 +28,14 @@ export function ExperienceSection() {
       <Drawer
         show={show}
         setShow={setShow}
-        title={'Technologies I work with and my current level of confidence'}
+        title={t(lang, 'skills.drawer.title')}
       >
         <SkillList />
       </Drawer>
       <Row>
         <Col className='d-flex justify-content-end' sm={12}>
           <Button onClick={() => setShow(true)} style={{ background: 'black' }}>
-            {t(lang, 'skills.read.more')}
+            {t(lang, 'skills.skillList')}
           </Button>
         </Col>
         <Col sm={12} md={6}>
