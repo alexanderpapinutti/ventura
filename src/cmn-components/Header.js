@@ -8,7 +8,6 @@ import t from 'translator';
 
 import englishFlag from '../assets/images/united-kingdom.png';
 import italianFlag from '../assets/images/italy.png';
-import logo from '../assets/images/logo.png';
 
 import { LangContext } from '../context';
 
@@ -19,7 +18,7 @@ export function Header() {
     <Navbar sticky='top' expand='lg' bg='dark' variant='dark'>
       <Container>
         <Navbar.Brand href='#root'>
-          <img className={'logo'} src={logo} />
+          <h5 className={'logo'}>V</h5>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls='responsive-navbar-nav' />
         <Navbar.Collapse id='responsive-navbar-nav'>

@@ -28,7 +28,7 @@ export const skills = {
         ' Being able to see how your system is used can provide you with the competitive edge you need to make educated and strategic decisions about your business',
       it:
         'Questo servizio mira a raccogliere dati rilevanti per la vostra impresa, integrando un database basato su timestamp (InfluxDB) e visualizzando tali dati in modo visivamente significativo (Grafana).' +
-        ' Essere in grado di vedere come viene utilizzato il tuo sistema può fornirti il ​​vantaggio competitivo di cui hai bisogno per prendere decisioni consapevoli e strategiche sulla tua attività',
+        ' Essere in grado di vedere come viene utilizzato il tuo sistema può fornirti il ​​vantaggio competitivo di cui hai bisogno per prendere decisioni strategiche sulla tua attività',
     },
   },
   database: {
@@ -48,7 +48,7 @@ export const skills = {
     },
     text: {
       en: 'This sevice aims at providing the full solution for you next Web Application or Website, ranging from static websites to blogs to web shops.',
-      it: 'Questo servizio mira a fornire la soluzione completa per la tua prossima applicazione web o sito web, che va dai siti web statici ai blog ai negozi web.',
+      it: 'Questo servizio mira a fornire la soluzione completa per la tua prossima applicazione o sito web.',
     },
   },
   maintenance: {
@@ -69,7 +69,7 @@ export const skills = {
   },
 
   skillList: {
-    en: 'Technologies I use',
+    en: 'Tech stack',
     it: 'Tecnologie utilizate',
   },
   read: {

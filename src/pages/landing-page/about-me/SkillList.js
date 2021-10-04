@@ -5,6 +5,7 @@ const skillList = [
   { alt: 'HTML', level: 81 },
   { alt: 'CSS/SCSS', level: 85 },
   { alt: 'JavaScript', level: 92 },
+  { alt: 'TypeScript', level: 75 },
   { alt: 'MongoDB', level: 72 },
   { alt: 'Express.js', level: 81 },
   { alt: 'React.js', level: 91 },
@@ -23,9 +24,10 @@ const skillList = [
 ];
 
 export function SkillList() {
+  const sortedList = _.sortBy(skillList, ({ alt }) => alt);
   return (
     <div style={{ display: 'flex', flexDirection: 'column' }}>
-      {_.map(skillList, (skill) => {
+      {_.map(sortedList, (skill) => {
         return (
           <div className={'p-1'}>
             {skill.alt}

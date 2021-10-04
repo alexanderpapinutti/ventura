@@ -19,7 +19,14 @@ p {
 }
 
 .logo {
-  height: 40px;
+  font-size: 40px;
+  border: solid 2px white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 42px;
+  width: 42px;
 }
 
 .flag {
