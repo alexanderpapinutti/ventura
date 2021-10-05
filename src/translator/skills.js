@@ -25,10 +25,10 @@ export const skills = {
     text: {
       en:
         'This service aims at collecting business relevant data by integrating a timestamp based database (InfluxDB) and displaying such data in a visually meaningful manner (Grafana).' +
-        ' Being able to see how your system is used can provide you with the competitive edge you need to make educated and strategic decisions about your business',
+        ' Being able to see how your system is used can provide you with the competitive edge you need to make educated and strategic decisions about your business.',
       it:
         'Questo servizio mira a raccogliere dati rilevanti per la vostra impresa, integrando un database basato su timestamp (InfluxDB) e visualizzando tali dati in modo visivamente significativo (Grafana).' +
-        ' Essere in grado di vedere come viene utilizzato il tuo sistema può fornirti il ​​vantaggio competitivo di cui hai bisogno per prendere decisioni strategiche sulla tua attività',
+        ' Essere in grado di vedere come viene utilizzato il tuo sistema può fornirti il ​​vantaggio competitivo di cui hai bisogno per prendere decisioni strategiche sulla tua attività.',
     },
   },
   database: {
@@ -57,19 +57,13 @@ export const skills = {
       it: 'Manutenzione',
     },
     text: {
-      en: 'This service aims at fixing and maintaining websites / applications/ mobile applications',
-      it: 'Questo servizio mira a riparare e mantenere siti web / applicazioni / applicazioni mobili',
-    },
-  },
-  drawer: {
-    title: {
-      en: "Here's a list of technologies I've worked with and an abstraction of my experience/confidence working with such tools:",
-      it: "Ecco un elenco di tecnologie con cui ho lavorato e un'astrazione della mia esperienza/confidenza lavorando con tali strumenti:",
+      en: 'This service aims at fixing and maintaining websites / applications/ mobile applications.',
+      it: 'Questo servizio mira a riparare e mantenere siti web / applicazioni / applicazioni mobili.',
     },
   },
   experience: {
-    en: 'Experience',
-    it: 'Esperienza',
+    en: 'Experience...',
+    it: 'Esperienza...',
   },
   skillList: {
     en: 'Tech stack',

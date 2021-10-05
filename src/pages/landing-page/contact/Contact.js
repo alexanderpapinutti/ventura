@@ -4,6 +4,7 @@ import Image from 'react-bootstrap/Image';
 
 import { AlertContext } from '../../../context';
 import { copyToClipboard } from '../../../utils';
+import { Section } from '../components';
 
 import gmail from '../../../assets/images/gmail.png';
 
@@ -17,7 +18,7 @@ export function Contact() {
       id={'contact'}
       className={'pb-5 justify-content-center bg-dark text-white'}
     >
-      <div className={'p-5'}>
+      <Section className={'p-5'}>
         <div>
           <h2>{t('contact.title')}</h2>
           <Image
@@ -30,7 +31,7 @@ export function Contact() {
         <div>
           <p className={'pt-2'}>{t('contact.email')}</p>
         </div>
-      </div>
+      </Section>
     </div>
   );
 }
