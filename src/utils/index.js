@@ -3,7 +3,9 @@ import { LangContext } from '../context';
 
 export function getLanguage() {
   const { lang } = useContext(LangContext);
-  return localStorage.getItem('language') || lang;
+  const result = localStorage.getItem('language') || lang;
+  console.log(result);
+  return result;
 }
 
 export function copyToClipboard(link, setAlert, text) {

@@ -6,6 +6,24 @@ body {
   padding-top: 100px;
 }
 
+.nav-divider {
+  height: 50px;
+  width: 1px;
+  background: white;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+@media only screen and (max-width: 991px) {
+  .nav-divider {
+    height: 1px;
+    width: 120px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    background: white;
+  }
+}
+
 p {
   font-size: 18px;
 }

@@ -5,7 +5,6 @@ import Col from 'react-bootstrap/Col';
 import t from 'translator';
 import { NumberDisplay } from '../about-me/NumberDisplay';
 import { Section } from '../components';
-import { getLanguage } from '../../../utils';
 import { SkillProgress } from './SkillProgress';
 
 function getYearsOfExperience({ day, month, year }) {
@@ -18,24 +17,23 @@ function getYearsOfExperience({ day, month, year }) {
 export function ExperienceSection() {
   const professional = getYearsOfExperience({ day: 1, month: 6, year: 2019 });
   const general = getYearsOfExperience({ day: 10, month: 9, year: 2017 });
-  const lang = getLanguage();
 
   return (
     <>
       <Section>
         <Row>
-          <Col>
-            <h2>Technologies used</h2>
+          <Col sm={12}>
+            <h2>{t('skills.experience')}</h2>
           </Col>
           <Col sm={12} md={6}>
             <NumberDisplay
-              label={t(lang, 'about.experience.professional')}
+              label={t('about.experience.professional')}
               years={professional}
             />
           </Col>
           <Col sm={12} md={6}>
             <NumberDisplay
-              label={t(lang, 'about.experience.general')}
+              label={t('about.experience.general')}
               years={general}
             />
           </Col>

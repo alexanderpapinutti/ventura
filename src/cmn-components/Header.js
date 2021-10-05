@@ -11,36 +11,39 @@ import italianFlag from '../assets/images/italy.png';
 
 import { LangContext } from '../context';
 
-export function Header() {
-  const { setLang, lang } = useContext(LangContext);
+function setLanguage(lang, setLang) {
+  setLang(lang);
+  localStorage.setItem('language', lang);
+}
 
+export function Header() {
+  const { setLang } = useContext(LangContext);
   return (
     <Navbar sticky='top' expand='lg' bg='dark' variant='dark'>
       <Container>
-        <Navbar.Brand href='#root'>
+        <Navbar.Brand href='#root' style={{ paddingRight: 40 }}>
           <h5 className={'logo'}>V</h5>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls='responsive-navbar-nav' />
         <Navbar.Collapse id='responsive-navbar-nav'>
-          <Nav className='me-auto'>
+          <Nav className='me-auto align-items-center'>
             <Nav.Link className='scalable' href='#about-me'>
-              {t(lang, 'general.aboutMe')}
+              {t('general.aboutMe')}
             </Nav.Link>
+            <div className='nav-divider' />
             <Nav.Link className='scalable' href='#service-list'>
-              {t(lang, 'general.services')}
+              {t('general.services')}
             </Nav.Link>
+            <div className='nav-divider' />
             <Nav.Link className='scalable' href='#contact'>
-              {t(lang, 'general.contact')}
+              {t('general.contact')}
             </Nav.Link>
           </Nav>
           <Nav className='d-flex flex-row justify-content-end'>
             <div>
               <Image
                 className='flag scalable'
-                onClick={() => {
-                  localStorage.setItem('language', 'en');
-                  setLang('en');
-                }}
+                onClick={() => setLanguage('en', setLang)}
                 src={englishFlag}
                 rounded
               />
@@ -48,10 +51,7 @@ export function Header() {
             <div>
               <Image
                 className='flag scalable'
-                onClick={() => {
-                  localStorage.setItem('language', 'it');
-                  setLang('it');
-                }}
+                onClick={() => setLanguage('it', setLang)}
                 src={italianFlag}
                 rounded
               />

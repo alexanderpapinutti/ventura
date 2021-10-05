@@ -1,5 +1,3 @@
-import { useContext } from 'react';
-
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
@@ -7,15 +5,11 @@ import Image from 'react-bootstrap/Image';
 import t from 'translator';
 
 import { Section } from '../components';
-import { AlertContext } from '../../../context';
 import linkedin from '../../../assets/images/linkedin.png';
 import github from '../../../assets/images/github.png';
-import { copyToClipboard, getLanguage } from '../../../utils';
+import { Link } from 'react-router-dom';
 
 export function AboutMe() {
-  const lang = getLanguage();
-  const { setAlert } = useContext(AlertContext);
-
   const linkedInLink = 'https://www.linkedin.com/in/alexander-papinutti/';
   const gitHubLink = 'https://github.com/alexanderpapinutti';
 
@@ -23,22 +17,24 @@ export function AboutMe() {
     <Section id={'about-me'}>
       <Row>
         <Col xs={12} md={6} className={'pb-sm-2'}>
-          <h2>{t(lang, 'about.aboutMe')}</h2>
-          <Image
-            onClick={() =>
-              copyToClipboard(linkedInLink, setAlert, 'LinkedIn link')
-            }
-            className='flag scalable'
-            src={linkedin}
-          />
-          <Image
-            onClick={() => copyToClipboard(gitHubLink, setAlert, 'Github link')}
-            className='flag scalable'
-            src={github}
-          />{' '}
+          <h2>{t('about.aboutMe')}</h2>
+          <Link
+            to={{ pathname: linkedInLink }}
+            target={'_blank'}
+            rel='noreferrer'
+          >
+            <Image className='flag scalable' src={linkedin} />
+          </Link>
+          <Link
+            to={{ pathname: gitHubLink }}
+            target={'_blank'}
+            rel='noreferrer'
+          >
+            <Image className='flag scalable' src={github} />
+          </Link>
         </Col>
         <Col xs={12} md={6}>
-          <p>{t(lang, 'about.description')}</p>
+          <p>{t('about.description')}</p>
         </Col>
       </Row>
     </Section>

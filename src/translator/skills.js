@@ -67,7 +67,10 @@ export const skills = {
       it: "Ecco un elenco di tecnologie con cui ho lavorato e un'astrazione della mia esperienza/confidenza lavorando con tali strumenti:",
     },
   },
-
+  experience: {
+    en: 'Experience',
+    it: 'Esperienza',
+  },
   skillList: {
     en: 'Tech stack',
     it: 'Tecnologie utilizate',

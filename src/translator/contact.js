@@ -4,8 +4,8 @@ export const contact = {
     it: 'Come contattarmi',
   },
   email: {
-    en: 'For any inquiry you can contact me on my email provideded by clicking on the gmail icon, or for any urgent matter you can contact me on my mobile phone any time between 8-20 (UTC+2) time.',
-    it: "Per qualsiasi inchiesta potete scrivermi all'indirizzo e-mail ottenuto cliccando sull'icona, oppure se si tratta di una questione urgente conttattatemi sul mio cellulare qualsiasi ora fra le 8-20 (UTC+2)",
+    en: 'For any inquiry you can contact me on my email provideded by clicking on the gmail icon and I will respond within 24 hours.',
+    it: "Per qualsiasi inchiesta potete scrivermi all'indirizzo e-mail ottenuto cliccando sull'icona e risponderò entro 24 ore.",
   },
   submit: {
     en: 'Send contact details',
