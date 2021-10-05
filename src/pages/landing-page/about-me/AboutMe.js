@@ -7,14 +7,13 @@ import Image from 'react-bootstrap/Image';
 import t from 'translator';
 
 import { Section } from '../components';
-import { LangContext, AlertContext } from '../../../context';
+import { AlertContext } from '../../../context';
 import linkedin from '../../../assets/images/linkedin.png';
 import github from '../../../assets/images/github.png';
-import { copyToClipboard } from '../../../utils';
-import { ExperienceSection } from './Experience';
+import { copyToClipboard, getLanguage } from '../../../utils';
 
 export function AboutMe() {
-  const { lang } = useContext(LangContext);
+  const lang = getLanguage();
   const { setAlert } = useContext(AlertContext);
 
   const linkedInLink = 'https://www.linkedin.com/in/alexander-papinutti/';
@@ -40,9 +39,6 @@ export function AboutMe() {
         </Col>
         <Col xs={12} md={6}>
           <p>{t(lang, 'about.description')}</p>
-        </Col>
-        <Col xs={12}>
-          <ExperienceSection />
         </Col>
       </Row>
     </Section>

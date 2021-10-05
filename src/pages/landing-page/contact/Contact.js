@@ -2,18 +2,16 @@ import t from 'translator';
 import { useContext } from 'react';
 import Image from 'react-bootstrap/Image';
 
-import { AlertContext, LangContext } from '../../../context';
-import { copyToClipboard } from '../../../utils';
+import { AlertContext } from '../../../context';
+import { copyToClipboard, getLanguage } from '../../../utils';
 
 import gmail from '../../../assets/images/gmail.png';
-import phone from '../../../assets/images/phone.png';
 
 export function Contact() {
-  const { lang } = useContext(LangContext);
+  const lang = getLanguage();
   const { setAlert } = useContext(AlertContext);
 
   const emailText = 'alexpapinutti@gmail.com';
-  const phoneText = '+393498117005';
 
   return (
     <div
@@ -28,17 +26,6 @@ export function Contact() {
             className='flag scalable'
             src={gmail}
             style={{ marginLeft: 5 }}
-          />
-          <Image
-            onClick={() =>
-              copyToClipboard(
-                phoneText,
-                setAlert,
-                t(lang, 'general.phoneNumber')
-              )
-            }
-            className='flag scalable'
-            src={phone}
           />
         </div>
         <div>

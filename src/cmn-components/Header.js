@@ -37,7 +37,10 @@ export function Header() {
             <div>
               <Image
                 className='flag scalable'
-                onClick={() => setLang('en')}
+                onClick={() => {
+                  localStorage.setItem('language', 'en');
+                  setLang('en');
+                }}
                 src={englishFlag}
                 rounded
               />
@@ -45,7 +48,10 @@ export function Header() {
             <div>
               <Image
                 className='flag scalable'
-                onClick={() => setLang('it')}
+                onClick={() => {
+                  localStorage.setItem('language', 'it');
+                  setLang('it');
+                }}
                 src={italianFlag}
                 rounded
               />

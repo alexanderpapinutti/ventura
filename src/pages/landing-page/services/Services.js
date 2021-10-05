@@ -4,11 +4,10 @@ import { ServiceCard } from './ServiceCard';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Section } from '../components';
-import { LangContext } from '../../../context';
-import { useContext } from 'react';
+import { getLanguage } from '../../../utils';
 
 export function Services() {
-  const { lang } = useContext(LangContext);
+  const lang = getLanguage();
 
   return (
     <div id={'service-list'} className={'justify-content-center p-5'}>
@@ -53,8 +52,8 @@ function getServiceList(lang) {
 
 function ServiceList({ lang }) {
   return _.map(getServiceList(lang), ({ id, title, text }) => (
-    <Col xs={12} md={6} lg={3}>
-      <ServiceCard key={id} id={id} title={title} text={text} />
+    <Col key={id} xs={12} md={6} lg={3}>
+      <ServiceCard id={id} title={title} text={text} />
     </Col>
   ));
 }

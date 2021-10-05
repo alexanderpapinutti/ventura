@@ -1,16 +1,16 @@
-import { useContext } from 'react';
 import Image from 'react-bootstrap/Image';
 import t from 'translator';
 
 import { AboutMe } from './about-me';
 import { Contact } from './contact';
 import { Services } from './services';
+import { ExperienceSection } from './experience';
 
-import { LangContext } from '../../context';
 import Logo from '../../assets/images/logo512.png';
+import { getLanguage } from '../../utils';
 
 export function LandingPage() {
-  const { lang } = useContext(LangContext);
+  const lang = getLanguage();
 
   return (
     <>
@@ -22,6 +22,7 @@ export function LandingPage() {
         <h1 className={'text-center'}>{t(lang, 'about.title')}</h1>
       </div>
       <AboutMe />
+      <ExperienceSection />
       <Services />
       <Contact />
     </>
