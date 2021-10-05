@@ -1,4 +1,3 @@
-//.>.   `
 export const about = {
   title: {
     en: 'Welcome to my website!',

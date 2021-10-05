@@ -23,14 +23,18 @@ export function AboutMe() {
             target={'_blank'}
             rel='noreferrer'
           >
-            <Image className='flag scalable' src={linkedin} />
+            <Image
+              alt='LinkedIn icon'
+              className='flag scalable'
+              src={linkedin}
+            />
           </Link>
           <Link
             to={{ pathname: gitHubLink }}
             target={'_blank'}
             rel='noreferrer'
           >
-            <Image className='flag scalable' src={github} />
+            <Image alt='Github icon' className='flag scalable' src={github} />
           </Link>
         </Col>
         <Col xs={12} md={6}>

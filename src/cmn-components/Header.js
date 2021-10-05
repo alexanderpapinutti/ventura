@@ -42,6 +42,7 @@ export function Header() {
           <Nav className='d-flex flex-row justify-content-end'>
             <div>
               <Image
+                alt='english flag'
                 className='flag scalable'
                 onClick={() => setLanguage('en', setLang)}
                 src={englishFlag}
@@ -50,6 +51,7 @@ export function Header() {
             </div>
             <div>
               <Image
+                alt='italian flag'
                 className='flag scalable'
                 onClick={() => setLanguage('it', setLang)}
                 src={italianFlag}

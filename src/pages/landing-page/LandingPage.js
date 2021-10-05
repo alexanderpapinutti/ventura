@@ -13,8 +13,14 @@ export function LandingPage() {
     <>
       <div className={'d-flex align-items-center justify-content-center pt-5'}>
         <Image
+          alt='Logo'
           src={Logo}
-          style={{ height: 120, borderRadius: '50%', marginRight: 20 }}
+          style={{
+            height: 120,
+            width: 120,
+            borderRadius: '50%',
+            marginRight: 20,
+          }}
         />
         <h1 className={'text-center'}>{t('about.title')}</h1>
       </div>
