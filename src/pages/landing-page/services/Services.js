@@ -57,7 +57,7 @@ function getServiceList() {
 
 function ServiceList() {
   return _.map(getServiceList(), (image) => (
-    <Col key={image.title} sm={12} md={6} xl={3}>
+    <Col key={image.title} sm={12} md={6} xxl={3}>
       <ServiceCard image={image} />
     </Col>
   ));
