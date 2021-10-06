@@ -9,13 +9,11 @@ import Collapse from 'react-bootstrap/Collapse';
 
 import { ProgressBar } from './ProgressBar';
 
-const topSkillsList = [
+const skillsList = [
   { alt: 'React.js', level: 91 },
   { alt: 'MongoDB', level: 72 },
   { alt: 'React-native', level: 82 },
   { alt: 'Node.js', level: 95 },
-];
-const collapsibleSkillList = [
   { alt: 'HTML', level: 81 },
   { alt: 'CSS/SCSS', level: 85 },
   { alt: 'JavaScript', level: 92 },
@@ -47,16 +45,25 @@ export function CollapsableList() {
     onClick: () => setShow(!show),
   };
 
+  let visibleItems = [...skillsList];
+  if (!show) {
+    visibleItems.splice(6);
+  }
+
   return (
     <>
-      <div>
-        <SkillList skills={topSkillsList} />
-      </div>
-      <Collapse in={show}>
+      {!show && (
         <div>
-          <SkillList skills={collapsibleSkillList} />
+          <SkillList skills={visibleItems} />
         </div>
-      </Collapse>
+      )}
+      {show && (
+        <Collapse in={show}>
+          <div>
+            <SkillList skills={visibleItems} />
+          </div>
+        </Collapse>
+      )}
       <Row>
         <div
           style={{ width: '100%' }}
@@ -81,7 +88,8 @@ function SkillList({ skills }) {
           <Col
             key={alt}
             xs={6}
-            md={3}
+            md={4}
+            lg={2}
             className='scalable p-2 d-flex flex-column align-items-center'
           >
             <div

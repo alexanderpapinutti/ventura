@@ -11,13 +11,9 @@ import italianFlag from '../assets/images/italy.png';
 
 import { LangContext } from '../context';
 
-function setLanguage(lang, setLang) {
-  setLang(lang);
-  localStorage.setItem('language', lang);
-}
-
 export function Header() {
   const { setLang } = useContext(LangContext);
+
   return (
     <Navbar sticky='top' expand='lg' bg='dark' variant='dark'>
       <Container>
@@ -44,7 +40,7 @@ export function Header() {
               <Image
                 alt='english flag'
                 className='flag scalable'
-                onClick={() => setLanguage('en', setLang)}
+                onClick={() => setLang('en')}
                 src={englishFlag}
                 rounded
               />
@@ -53,7 +49,7 @@ export function Header() {
               <Image
                 alt='italian flag'
                 className='flag scalable'
-                onClick={() => setLanguage('it', setLang)}
+                onClick={() => setLang('it')}
                 src={italianFlag}
                 rounded
               />
