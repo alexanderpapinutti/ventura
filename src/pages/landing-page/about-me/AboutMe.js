@@ -38,7 +38,7 @@ export function AboutMe() {
           </Link>
         </Col>
         <Col xs={12} md={6}>
-          <p className='text-center'>{t('about.description')}</p>
+          <p>{t('about.description')}</p>
         </Col>
       </Row>
     </Section>
