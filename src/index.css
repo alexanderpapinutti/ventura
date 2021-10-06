@@ -6,6 +6,10 @@ body {
   padding-top: 100px;
 }
 
+.experience-section {
+  --bs-gutter-x: 0;
+}
+
 .nav-divider {
   height: 50px;
   width: 1px;

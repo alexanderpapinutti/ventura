@@ -21,7 +21,7 @@ export function ExperienceSection() {
   return (
     <>
       <Section>
-        <Row>
+        <Row style={{ marginRight: 0 }} className='experience-section'>
           <Col sm={12}>
             <h2>{t('skills.experience')}</h2>
           </Col>
@@ -39,7 +39,7 @@ export function ExperienceSection() {
           </Col>
         </Row>
       </Section>
-      <Row>
+      <Row style={{ marginRight: 0 }}>
         <Col>
           <SkillProgress />
         </Col>

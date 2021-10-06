@@ -24,14 +24,14 @@ export function Contact() {
       className={'pb-5 justify-content-center bg-dark text-white'}
     >
       <Section>
-        <div>
+        <div className='d-flex align-items-center'>
           <h2>{t('contact.title')}</h2>
           <Image
             alt='Gmail icon'
             onClick={() => copyToClipboard(emailText, setAlert, 'E-mail')}
             className='flag scalable'
             src={gmail}
-            style={{ marginLeft: 5 }}
+            style={{ marginLeft: 20, marginBottom: 16 }}
           />
         </div>
         <div>

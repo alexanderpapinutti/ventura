@@ -6,23 +6,27 @@ import { Contact } from './contact';
 import { Services } from './services';
 import { ExperienceSection } from './experience';
 
-import Logo from '../../assets/images/logo512.png';
+import Logo from '../../assets/images/logo150.png';
 
 export function LandingPage() {
   return (
     <>
-      <div className={'d-flex align-items-center justify-content-center pt-5'}>
+      <div
+        className={
+          'd-flex flex-column align-items-center justify-content-center pt-5'
+        }
+      >
+        <h1 className={'text-center'}>{t('about.title')}</h1>
         <Image
           alt='Logo'
           src={Logo}
           style={{
-            height: 120,
-            width: 120,
+            height: 150,
+            width: 150,
             borderRadius: '50%',
             marginRight: 20,
           }}
         />
-        <h1 className={'text-center'}>{t('about.title')}</h1>
       </div>
       <AboutMe />
       <ExperienceSection />
