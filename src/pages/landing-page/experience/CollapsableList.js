@@ -31,14 +31,48 @@ const skillsList = [
   { alt: 'GitHub', level: 95 },
 ];
 
+function SkillList({ skills }) {
+  return (
+    <div className='d-flex flex-wrap'>
+      {_.map(skills, ({ alt, level }) => {
+        return (
+          <Col
+            key={alt}
+            xs={6}
+            md={4}
+            lg={2}
+            className='scalable p-2 d-flex flex-column align-items-center'
+          >
+            <div
+              style={{
+                height: 60,
+                width: 60,
+                display: 'flex',
+                flexDirection: 'row',
+              }}
+            >
+              <ProgressBar percentage={level} />
+            </div>
+            {alt}
+          </Col>
+        );
+      })}
+    </div>
+  );
+}
+
+SkillList.propTypes = {
+  skills: PropTypes.array,
+};
+
 export function CollapsableList() {
   const [show, setShow] = useState(false);
 
   const arrowIconProps = {
     className: 'scalable',
     style: {
-      height: 60,
-      width: 60,
+      height: 40,
+      width: 40,
       fontSize: 40,
       cursor: 'pointer',
     },
@@ -79,37 +113,3 @@ export function CollapsableList() {
     </>
   );
 }
-
-function SkillList({ skills }) {
-  return (
-    <div className='d-flex flex-wrap'>
-      {_.map(skills, ({ alt, level }) => {
-        return (
-          <Col
-            key={alt}
-            xs={6}
-            md={4}
-            lg={2}
-            className='scalable p-2 d-flex flex-column align-items-center'
-          >
-            <div
-              style={{
-                height: 60,
-                width: 60,
-                display: 'flex',
-                flexDirection: 'row',
-              }}
-            >
-              <ProgressBar percentage={level} />
-            </div>
-            {alt}
-          </Col>
-        );
-      })}
-    </div>
-  );
-}
-
-SkillList.propTypes = {
-  skills: PropTypes.array,
-};
